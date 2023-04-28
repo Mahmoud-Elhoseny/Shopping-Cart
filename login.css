@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 90px;
+    background-color: #333;
+}
+
+.navbar-brand{
+    color: #fff !important;
+}
+
+li a{
+    color: #fff !important;
+    background-color: #08f;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+
+/* form */
+
+form{
+    position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+form h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #52057b;
+}
+
+
+nav ul#userInfo{
+    display: none;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart || Home page</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css.map">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5 fs-2" href="index.html">Shopping Cart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="links" class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="login.html">Sign in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Sign up</a>
+                    </li>
+                </ul>
+                <ul id="userInfo" class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li><a href="profile.html" id="user"></a></li>
+                    <li><a href="favourites.html" id="user">Favourites</a></li>
+                    <li><a href="myProducts.html" id="user">my products</a></li>
+                    <li class="shoppingCart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="badgee"></span>
+                        <div class="carts-products">
+                            <div></div>
+                            <a href="CartProducts.html">View All Products </a>
+                        </div>
+                    </li>
+                    <li><a href="#" id="logout">LogOut</a></li>
+                </ul>
+            </div>
+    </nav>
+
+
+
+
+    <section class="home">
+        <div class="container">
+            <div class="search-form">
+                <input type="text" id="search" placeholder="search by name">
+                <i class=" search-icon fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="product"></div>
+            <div class="products-filter">
+                <h2>Filter By Size:</h2>
+                <select name="" id="size-filter">
+                    <option value="" hidden>Filter By Size</option>
+                    <option value="all">All</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+
+            </div>
+        </div>
+        <a href="createProduct.html" class="create-product"><i class="fa fa-plus"></i></a>
+    </section>
+
+    <script src="user.js"></script>
+    <script src="data.js"></script>
+    <script src="cartMenu.js"></script>
+    <script src="main.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
